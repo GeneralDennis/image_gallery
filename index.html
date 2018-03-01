@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Image Gallery</title>
+</head>
+
+<body>
+    <div class="container-fluid mainContainer">
+        <div class="row p-5 bg-white">
+            <div class="col-8 col-md-11 col-sm-9">
+                <a class="navbar-brand" href="#">
+                          <img src="img/logo.png" width="99" height="62" alt="">
+                       </a>
+            </div>
+            <div class="col-4 col-md-1 col-sm-3">
+                <button class="navbar-toggler navbar-light" type="button" id="menuButt">
+                            <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+        </div>
+
+        <div id="menu" class="menu">
+            <span id="closeButt" class="close">X</span>
+            <ul class="mainList">
+                <li id="item1">Episodes</li>
+                <ul id="submenu1" class="innerList" style="display: none">
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                    <li>List Item 4</li>
+                    <li>List Item 5</li>
+                </ul>
+                <li id="item2">Characters</li>
+                <ul id="submenu2" class="innerList" style="display: none">
+                    <li>Dolores</li>
+                    <li>Maeve</li>
+                    <li>Bernard</li>
+                    <li>Ford</li>
+                    <li>Man in Black</li>
+                </ul>
+                <li id="item3">Park</li>
+                <ul id="submenu3" class="innerList" style="display: none">
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                    <li>List Item 4</li>
+                    <li>List Item 5</li>
+                </ul>
+                <li id="item4">Gallery</li>
+                <ul id="submenu4" class="innerList" style="display: none">
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                    <li>List Item 4</li>
+                    <li>List Item 5</li>
+                </ul>
+                <li id="item5">Actors</li>
+                <ul id="submenu5" class="innerList" style="display: none">
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                    <li>List Item 4</li>
+                    <li>List Item 5</li>
+                </ul>
+            </ul>
+        </div>
+        <div class="title">
+            <p>Image Gallery</p>
+        </div>
+        <section class="container-fluid">
+            <div class="row gallery">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/1.jpg" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow"></div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/2.jpg" alt="" onclick="openModal();currentSlide(2)" class="hover-shadow"></div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/3.jpg" alt="" onclick="openModal();currentSlide(3)" class="hover-shadow"></div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/4.jpg" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow"></div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/5.jpg" alt="" onclick="openModal();currentSlide(5)" class="hover-shadow"></div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/6.jpg" alt="" onclick="openModal();currentSlide(6)" class="hover-shadow"></div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/7.jpg" alt="" onclick="openModal();currentSlide(7)" class="hover-shadow"></div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/8.jpg" alt="" onclick="openModal();currentSlide(8)" class="hover-shadow"></div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/9.jpg" alt="" onclick="openModal();currentSlide(9)" class="hover-shadow"></div>
+            </div>
+
+
+        </section>
+
+
+        <div id="myModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <a href="#" class="closebtn" onclick="closeModal()">&#215;</a>
+                    <img src="img/1.jpg" alt="" class="mySlides">
+                    <img src="img/2.jpg" alt="" class="mySlides">
+                    <img src="img/3.jpg" alt="" class="mySlides">
+                    <img src="img/4.jpg" alt="" class="mySlides">
+                    <img src="img/5.jpg" alt="" class="mySlides">
+                    <img src="img/6.jpg" alt="" class="mySlides">
+                    <img src="img/7.jpg" alt="" class="mySlides">
+                    <img src="img/8.jpg" alt="" class="mySlides">
+                    <img src="img/9.jpg" alt="" class="mySlides">
+                    <p class="prev" onclick="plusSlides(-1)">&#10094;</p>
+                    <p class="next" onclick="plusSlides(1)">&#10095;</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>IMB
+                <p>
+        </footer>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
