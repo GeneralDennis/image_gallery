@@ -59,32 +59,6 @@ li {
     padding-bottom: 25px;
 }
 
-@media screen and (min-width: 640px) {
-    .title {
-        font-size: 48px;
-    }
-
-    .closebtn {
-        position: absolute;
-        top: -60px;
-        right: -40px;
-        font-size: 24px;
-    }
-    .next {
-        right: -100px;
-    }
-
-    .prev {
-        left: -100px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .modal {
-        padding-top: 250px;
-    }
-}
-
 .mainList li:hover {
     color: #383838;
     text-shadow: 1px 1px 2px #fff;
