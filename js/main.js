@@ -5,6 +5,11 @@ window.onload = function () {
     }
     document.getElementById("closeButt").onclick = function () {
         document.getElementById("menu").classList.remove('menuShow');
+        document.getElementById("submenu1").style.display = "none";
+        document.getElementById("submenu2").style.display = "none";
+        document.getElementById("submenu3").style.display = "none";
+        document.getElementById("submenu4").style.display = "none";
+        document.getElementById("submenu5").style.display = "none";
     }
     closeMenu("item1", "submenu1");
     closeMenu("item2", "submenu2");
