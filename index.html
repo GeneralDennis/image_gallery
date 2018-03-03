@@ -23,7 +23,7 @@
                        </a>
             </div>
             <div class="col-4 col-md-1 col-sm-3">
-                <button class="navbar-toggler navbar-light" type="button" id="menuButt">
+                <button class="navbar-toggler navbar-light" type="button" id="menuButt" onclick="showMenu()">
                             <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -31,7 +31,7 @@
         </div>
 
         <div id="menu" class="menu">
-            <span id="closeButt" class="close">X</span>
+            <span id="closeButt" class="close" onclick="hideMenu()">X</span>
             <ul class="mainList">
                 <li id="item1">Episodes</li>
                 <ul id="submenu1" class="innerList" style="display: none">
@@ -80,15 +80,15 @@
         </div>
         <section class="container-fluid">
             <div class="row gallery">
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/1.jpg" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow"></div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/2.jpg" alt="" onclick="openModal();currentSlide(2)" class="hover-shadow"></div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/3.jpg" alt="" onclick="openModal();currentSlide(3)" class="hover-shadow"></div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/4.jpg" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow"></div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/5.jpg" alt="" onclick="openModal();currentSlide(5)" class="hover-shadow"></div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/6.jpg" alt="" onclick="openModal();currentSlide(6)" class="hover-shadow"></div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/7.jpg" alt="" onclick="openModal();currentSlide(7)" class="hover-shadow"></div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/8.jpg" alt="" onclick="openModal();currentSlide(8)" class="hover-shadow"></div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/9.jpg" alt="" onclick="openModal();currentSlide(9)" class="hover-shadow"></div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/1.jpg" alt="" onclick="openModal();currentSlide(1); hideMenu()" class="hover-shadow"></div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/2.jpg" alt="" onclick="openModal();currentSlide(2);hideMenu()" class="hover-shadow"></div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/3.jpg" alt="" onclick="openModal();currentSlide(3);hideMenu()" class="hover-shadow"></div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/4.jpg" alt="" onclick="openModal();currentSlide(4);hideMenu()" class="hover-shadow"></div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/5.jpg" alt="" onclick="openModal();currentSlide(5);hideMenu()" class="hover-shadow"></div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/6.jpg" alt="" onclick="openModal();currentSlide(6);hideMenu()" class="hover-shadow"></div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/7.jpg" alt="" onclick="openModal();currentSlide(7);hideMenu()" class="hover-shadow"></div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/8.jpg" alt="" onclick="openModal();currentSlide(8);hideMenu()" class="hover-shadow"></div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4"><img src="img/9.jpg" alt="" onclick="openModal();currentSlide(9);hideMenu()" class="hover-shadow"></div>
             </div>
 
 

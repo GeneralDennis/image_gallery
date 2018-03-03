@@ -1,22 +1,21 @@
-window.onload = function () {
-    var menu = document.getElementById("menuButt");
-    menu.onclick = function () {
-        document.getElementById("menu").classList.add('menuShow');
-    }
-    document.getElementById("closeButt").onclick = function () {
-        document.getElementById("menu").classList.remove('menuShow');
-        document.getElementById("submenu1").style.display = "none";
-        document.getElementById("submenu2").style.display = "none";
-        document.getElementById("submenu3").style.display = "none";
-        document.getElementById("submenu4").style.display = "none";
-        document.getElementById("submenu5").style.display = "none";
-    }
-    closeMenu("item1", "submenu1");
-    closeMenu("item2", "submenu2");
-    closeMenu("item3", "submenu3");
-    closeMenu("item4", "submenu4");
-    closeMenu("item5", "submenu5");
+function showMenu() {
+    document.getElementById("menu").classList.add('menuShow');
 }
+
+function hideMenu() {
+    document.getElementById("menu").classList.remove('menuShow');
+    document.getElementById("submenu1").style.display = "none";
+    document.getElementById("submenu2").style.display = "none";
+    document.getElementById("submenu3").style.display = "none";
+    document.getElementById("submenu4").style.display = "none";
+    document.getElementById("submenu5").style.display = "none";
+}
+
+closeMenu("item1", "submenu1");
+closeMenu("item2", "submenu2");
+closeMenu("item3", "submenu3");
+closeMenu("item4", "submenu4");
+closeMenu("item5", "submenu5");
 
 // Open the Modal
 function openModal() {
